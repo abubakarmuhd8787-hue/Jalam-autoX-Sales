@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jalam autoX </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>AutoMax Sales</h1>
+                <p>Premium Cars & Motorcycles</p>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Toggle Button -->
+            <div class="mobile-toggle" id="mobileToggle">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <span class="close-mobile-menu" id="closeMobileMenu">&times;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Our Dealership</h3>
+                    <p><strong>Address:</strong> 123 Auto Plaza, Motor City</p>
+                    <p><strong>Phone:</strong> 08088865775</p>
+                    <p><strong>Email:</strong> muhammadmuhammadjalam@gmail.com</p>
+                    
+                    <h3>Showroom Hours</h3>
+                    <p>Monday-Friday: 9AM-7PM</p>
+                    <p>Saturday: 9AM-6PM</p>
+                    <p>Sunday: 11AM-5PM</p>
+                    
+                    <h3>Service Department</h3>
+                    <p>Monday-Friday: 7AM-6PM</p>
+                    <p>Saturday: 8AM-4PM</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" action="/submit-contact" method="POST">
+                        <div>
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div>
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+       
+        
+        <p>&copy; 2025 Jalam autoX. All rights reserved.</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
